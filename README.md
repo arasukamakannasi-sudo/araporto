@@ -593,3 +593,5 @@ silahkan hubungi melalui:
 ---
 
 *Terima kasih telah mengunjungi portofolio pribadi saya!* 🙏
+#   f a i z a h a z z a h r a  
+ 
