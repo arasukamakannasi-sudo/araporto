@@ -120,7 +120,6 @@ araporto/
 - **Framer Motion 10.16.16** - Animation library
 - **Lucide React 0.294.0** - Icon library
 
-
 ## 📦 Installation & Setup
 
 ### **Prerequisites**
@@ -206,47 +205,23 @@ npm run deploy
 - Copy the contents of the `dist/` folder to your web server
 - Ensure the server supports SPA routing
 
-## 🎯 Filosofi Desain
+## 🎯 Design Philosophy
 
-### **🎨 Visual Design Principles**
+### **Visual Design**
+- **Clean & Minimal**: Focus on content with elegant typography
+- **Professional Theme**: Navy, white, and soft gray color palette
+- **Modern Typography**: Inter, Lato, and Poppins fonts
+- **Consistent Spacing**: 4rem section padding, 1.5rem component gaps
 
-#### **Color Palette**
-```css
-Primary Navy: #1e3a8a (navy-800)
-Secondary Gray: #f8fafc (gray-50)
-Accent White: #ffffff
-Text Dark: #1f2937 (gray-800)
-Text Light: #6b7280 (gray-500)
-```
+### **User Experience**
+- **Mobile-First**: Responsive design for all devices
+- **Accessibility**: Good color contrast and keyboard navigation
+- **Performance**: Optimized images and minimal JavaScript
+- **Smooth Animations**: Subtle 3D effects with Framer Motion
 
-#### **Typography Scale**
-```css
-Heading 1: 3rem (48px) - Poppins Bold
-Heading 2: 2.25rem (36px) - Poppins SemiBold
-Body Large: 1.125rem (18px) - Inter Regular
-Body: 1rem (16px) - Inter Regular
-Small: 0.875rem (14px) - Inter Regular
-```
+## ✨ Animations & Interactions
 
-#### **Spacing System**
-```css
-Section Padding: 4rem (64px)
-Component Gap: 1.5rem (24px)
-Card Padding: 1.5rem (24px)
-Button Padding: 0.75rem 1.5rem
-```
-
-### **🧠 UX Principles**
-
-1. **Minimalism**: Fokus pada konten penting
-2. **Accessibility**: Kontras warna yang baik, navigasi keyboard
-3. **Performance**: Optimized images, lazy loading
-4. **Responsiveness**: Mobile-first approach
-5. **Consistency**: Design system yang konsisten
-
-## ✨ Animasi & Interaksi
-
-### **🎭 3D Animation Effects**
+### **3D Animation Effects**
 
 #### **Hero Section**
 ```typescript
@@ -291,10 +266,10 @@ hover: {
 }
 ```
 
-### **🎪 Transition Effects**
-- **Duration**: 0.3s untuk hover, 0.8s untuk entrance
-- **Easing**: ease-out untuk smooth feeling
-- **Stagger**: 0.1s delay antar elemen
+### **Transition Effects**
+- **Duration**: 0.3s for hover, 0.8s for entrance
+- **Easing**: ease-out for smooth feeling
+- **Stagger**: 0.1s delay between elements
 - **3D Transform**: `transformStyle: 'preserve-3d'`
 
 ## 📱 Responsive Design
@@ -307,14 +282,14 @@ Desktop: > 1024px (xl, 2xl)
 ```
 
 ### **Mobile Optimizations**
-- Hamburger menu untuk navigasi
-- Stacked layout untuk form
+- Hamburger menu for navigation
+- Stacked layout for forms
 - Touch-friendly button sizes
 - Optimized image sizes
 - Reduced animation complexity
 
 ### **Tablet Adaptations**
-- 2-column layout untuk cards
+- 2-column layout for cards
 - Adjusted spacing
 - Medium font sizes
 
@@ -326,14 +301,13 @@ Desktop: > 1024px (xl, 2xl)
 
 ## 🔧 Customization
 
-### **🎨 Mengubah Warna Tema**
+### **🎨 Change Theme Colors**
 Edit file `tailwind.config.js`:
 ```javascript
 theme: {
   extend: {
     colors: {
       'navy': {
-        // Sesuaikan warna navy
         800: '#1e3a8a', // Primary
         700: '#1e40af', // Darker
         600: '#2563eb', // Lighter
@@ -343,12 +317,12 @@ theme: {
 }
 ```
 
-### **📝 Mengubah Konten**
+### **📝 Update Content**
 1. **Hero Section** (`Hero.tsx`):
    ```typescript
-   // Ganti nama dan deskripsi
-   <h1>Nama Anda</h1>
-   <p>Deskripsi Anda</p>
+   // Change name and description
+   <h1>Your Name</h1>
+   <p>Your Description</p>
    ```
 
 2. **About Section** (`About.tsx`):
@@ -357,8 +331,8 @@ theme: {
    const personalInfo = [
      {
        icon: BookOpen,
-       title: "Hobi Anda",
-       description: "Deskripsi hobi..."
+       title: "Your Hobby",
+       description: "Description of your hobby..."
      }
    ];
    ```
@@ -370,28 +344,28 @@ theme: {
      {
        icon: Mail,
        title: "Email",
-       value: "email@anda.com",
-       link: "mailto:email@anda.com"
+       value: "your@email.com",
+       link: "mailto:your@email.com"
      }
    ];
    ```
 
-### **🖼️ Mengganti Foto**
-1. **Upload foto** ke folder `public/` atau hosting online
-2. **Update URL** di komponen:
+### **🖼️ Replace Images**
+1. **Upload your photos** to the `public/` folder or online hosting
+2. **Update the image paths** in components:
    ```typescript
-   // Hero.tsx dan About.tsx
+   // Hero.tsx and About.tsx
    src="path/to/your/photo.jpg"
    ```
 
-### **🔗 Mengupdate Social Links**
-Edit di `Contact.tsx`:
+### **🔗 Update Social Links**
+Edit in `Contact.tsx`:
 ```typescript
 const socialLinks = [
   {
     icon: Linkedin,
     name: "LinkedIn",
-    url: "https://linkedin.com/in/username",
+    url: "https://linkedin.com/in/yourusername",
     color: "hover:text-blue-600"
   }
 ];
@@ -400,8 +374,8 @@ const socialLinks = [
 ## 📊 Performance
 
 ### **Optimization Features**
-- **Code Splitting**: Automatic dengan Vite
-- **Tree Shaking**: Unused code removal
+- **Code Splitting**: Automatic with Vite
+- **Tree Shaking**: Removes unused code
 - **Image Optimization**: Responsive images
 - **CSS Purging**: TailwindCSS removes unused styles
 - **Bundle Analysis**: Built-in Vite analyzer
@@ -420,7 +394,7 @@ npx vite-bundle-analyzer dist
 ```
 
 ### **Loading Optimization**
-- Lazy loading untuk images
+- Lazy loading for images
 - Preload critical resources
 - Minimal JavaScript bundle
 - Optimized CSS delivery
@@ -431,7 +405,7 @@ npx vite-bundle-analyzer dist
 
 #### **1. Dependencies Installation Error**
 ```bash
-# Clear cache dan reinstall
+# Clear cache and reinstall
 rm -rf node_modules package-lock.json
 npm install
 ```
@@ -475,37 +449,24 @@ const animationProps = isMobile
 >
 ```
 
-## 📄 Lisensi
+## 📄 License
 
-```
-© 2025 Faizah Azzahra. All Rights Reserved.
+© 2025 Araporto. All Rights Reserved.
 
-Website portofolio pribadi ini dibuat dengan tujuan personal branding 
-dan representasi diri yang profesional. Semua konten, desain, dan 
-kode dalam proyek ini adalah milik pribadi Faizah Azzahra.
-
-Dilarang mengcopy, memodifikasi, atau menggunakan ulang tanpa 
-izin tertulis dari pemilik.
-```
+This portfolio website is created for personal branding and professional representation. All content, design, and code in this project are personal property.
 
 ---
 
-## 📞 Kontak & Support
+## 📞 Contact & Support
 
-**Dibuat dengan ❤️ oleh Faizah Azzahra**
+**Made with ❤️ by Araporto**
 
-Jika ada pertanyaan atau feedback mengenai website ini, 
-silahkan hubungi melalui:
+For questions or feedback about this website, please contact:
 
-- 📧 Email: faizah.azzahra@example.com
-- 💼 LinkedIn: [Faizah Azzahra](https://linkedin.com/in/faizah-azzahra)
-- 📱 Instagram: [@faizah.azzahra](https://instagram.com/faizah.azzahra)
+- 📧 Email: contact@araporto.com
+- 💼 GitHub: [arasukamakannasi-sudo](https://github.com/arasukamakannasi-sudo)
+- 🌐 Website: [araporto.com](https://araporto.com)
 
 ---
 
-*Terima kasih telah mengunjungi portofolio pribadi saya!* 🙏
-#   f a i z a h a z z a h r a 
- 
- #   a r a p o r t o 
- 
- 
+*Thank you for visiting my portfolio!* 🙏
