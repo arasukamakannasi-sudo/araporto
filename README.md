@@ -1,4 +1,4 @@
-# 📄 Faizah Azzahra - Personal Portfolio
+# 🚀 Araporto - Modern Portfolio Website
 
 [![React](https://img.shields.io/badge/React-18.2.0-blue.svg)](https://reactjs.org/)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.2.2-blue.svg)](https://www.typescriptlang.org/)
@@ -6,187 +6,112 @@
 [![Vite](https://img.shields.io/badge/Vite-5.0.8-646CFF.svg)](https://vitejs.dev/)
 [![Framer Motion](https://img.shields.io/badge/Framer_Motion-10.16.16-FF0055.svg)](https://www.framer.com/motion/)
 
-Website portofolio pribadi formal dengan desain profesional dan modern menggunakan React + TypeScript dan TailwindCSS. Website ini dirancang sebagai representasi diri yang elegan, tenang, dan kredibel.
+A modern, responsive portfolio website built with React, TypeScript, and TailwindCSS. Features elegant animations, clean design, and professional presentation.
 
-## 📋 Daftar Isi
+## 📋 Table of Contents
 
-- [🚀 Fitur Utama](#-fitur-utama)
-- [📁 Struktur Proyek](#-struktur-proyek)
-- [🎨 Komponen & Halaman](#-komponen--halaman)
-- [🔄 Flowchart Aplikasi](#-flowchart-aplikasi)
-- [🛠️ Teknologi](#️-teknologi)
-- [📦 Instalasi & Setup](#-instalasi--setup)
+- [🚀 Features](#-features)
+- [📁 Project Structure](#-project-structure)
+- [🎨 Components](#-components)
+- [🛠️ Technologies](#️-technologies)
+- [📦 Installation & Setup](#-installation--setup)
 - [🏗️ Build & Deploy](#️-build--deploy)
-- [🎯 Filosofi Desain](#-filosofi-desain)
-- [✨ Animasi & Interaksi](#-animasi--interaksi)
+- [🎯 Design Philosophy](#-design-philosophy)
+- [✨ Animations & Interactions](#-animations--interactions)
 - [📱 Responsive Design](#-responsive-design)
 - [🔧 Customization](#-customization)
 - [📊 Performance](#-performance)
 - [🐛 Troubleshooting](#-troubleshooting)
-- [📄 Lisensi](#-lisensi)
+- [📄 License](#-license)
 
-## 🚀 Fitur Utama
+## 🚀 Features
 
 ### ✨ **Design & User Experience**
-- **Tema Profesional**: Warna putih, abu-abu lembut, dan aksen navy
-- **Typography Elegan**: Font Inter, Lato, dan Poppins
-- **Layout Clean**: Desain minimalis yang fokus pada konten
-- **Responsive**: Optimal di desktop, tablet, dan mobile
+- **Professional Theme**: Clean white, soft gray, and navy accents
+- **Elegant Typography**: Inter, Lato, and Poppins fonts
+- **Clean Layout**: Minimalist design focused on content
+- **Fully Responsive**: Optimized for desktop, tablet, and mobile
 
-### 🎭 **Animasi & Interaksi**
-- **3D Effects**: Rotasi dan transformasi 3D yang subtle
-- **Framer Motion**: Animasi halus dan transisi yang elegan
-- **Hover Effects**: Interaksi yang responsif dan menarik
-- **Scroll Animations**: Animasi yang muncul saat scroll
+### 🎭 **Animations & Interactions**
+- **3D Effects**: Subtle rotations and 3D transformations
+- **Framer Motion**: Smooth and elegant animations
+- **Hover Effects**: Responsive and engaging interactions
+- **Scroll Animations**: Elements animate on scroll
 
-### 🏗️ **Teknologi & Performance**
-- **TypeScript**: Type safety dan developer experience
-- **Vite**: Build tool yang cepat dan efisien
+### 🏗️ **Technology & Performance**
+- **TypeScript**: Type safety and enhanced developer experience
+- **Vite**: Fast and efficient build tool
 - **TailwindCSS**: Utility-first CSS framework
-- **Component Architecture**: Struktur yang modular dan maintainable
+- **Component Architecture**: Modular and maintainable structure
 
-## 📁 Struktur Proyek
+## 📁 Project Structure
 
 ```
-faizah-portfolio/
+araporto/
 ├── 📁 public/
 │   └── vite.svg
 ├── 📁 src/
 │   ├── 📁 components/
-│   │   ├── 📄 Navbar.tsx          # Navigasi utama dengan hamburger menu
-│   │   ├── 📄 Hero.tsx            # Section utama dengan foto profil
-│   │   ├── 📄 About.tsx           # Tentang saya dengan info pribadi
-│   │   ├── 📄 Contact.tsx         # Form kontak dan informasi
-│   │   └── 📄 Footer.tsx          # Footer dengan navigasi cepat
-│   ├── 📄 App.tsx                 # Komponen utama aplikasi
-│   ├── 📄 main.tsx               # Entry point aplikasi
-│   └── 📄 index.css              # Global styles dan Tailwind imports
+│   │   ├── 📄 Navbar.tsx          # Main navigation with hamburger menu
+│   │   ├── 📄 Hero.tsx            # Hero section with profile photo
+│   │   ├── 📄 About.tsx           # About section with personal info
+│   │   ├── 📄 Contact.tsx         # Contact form and information
+│   │   └── 📄 Footer.tsx          # Footer with quick navigation
+│   ├── 📄 App.tsx                 # Main application component
+│   ├── 📄 main.tsx               # Application entry point
+│   └── 📄 index.css              # Global styles and Tailwind imports
 ├── 📄 index.html                 # HTML template
-├── 📄 package.json               # Dependencies dan scripts
-├── 📄 tailwind.config.js         # Konfigurasi TailwindCSS
-├── 📄 postcss.config.js          # Konfigurasi PostCSS
-├── 📄 tsconfig.json              # Konfigurasi TypeScript
-├── 📄 tsconfig.node.json         # Konfigurasi TypeScript untuk Node
-├── 📄 vite.config.ts             # Konfigurasi Vite
+├── 📄 package.json               # Dependencies and scripts
+├── 📄 tailwind.config.js         # TailwindCSS configuration
+├── 📄 postcss.config.js          # PostCSS configuration
+├── 📄 tsconfig.json              # TypeScript configuration
+├── 📄 tsconfig.node.json         # TypeScript configuration for Node
+├── 📄 vite.config.ts             # Vite configuration
 ├── 📄 .gitignore                 # Git ignore rules
-└── 📄 README.md                  # Dokumentasi proyek
+└── 📄 README.md                  # Project documentation
 ```
 
-## 🎨 Komponen & Halaman
+## 🎨 Components
 
 ### 🏠 **Hero Section** (`Hero.tsx`)
-```typescript
-// Fitur utama:
-- Foto profil dengan border animasi
-- Judul nama dengan efek 3D
-- Deskripsi singkat
-- Tombol CTA dengan hover effects
-- Scroll indicator animasi
-```
-
-**Animasi 3D:**
-- `rotateX: -15` → `rotateX: 0` (initial)
-- `rotateY: 2` pada hover (judul)
-- `rotateY: ±5` pada tombol hover
+- Profile photo with animated border
+- 3D title effects
+- Brief description
+- CTA buttons with hover effects
+- Scroll indicator animation
 
 ### 👤 **About Section** (`About.tsx`)
-```typescript
-// Fitur utama:
-- Foto dengan efek 3D masuk
-- Deskripsi pribadi lengkap
-- 4 kartu informasi (Hobi, Kepribadian, Filosofi, Keseharian)
-- Animasi scroll-triggered
-```
-
-**Animasi 3D:**
-- `rotateY: -20` → `rotateY: 0` (foto)
-- `rotateX: -10` → `rotateX: 0` (kartu)
-- `rotateY: 3` pada hover (kartu)
+- Photo with 3D entrance effect
+- Personal description
+- Information cards (Hobbies, Personality, Philosophy, Daily Life)
+- Scroll-triggered animations
 
 ### 📞 **Contact Section** (`Contact.tsx`)
-```typescript
-// Fitur utama:
-- Form kontak dengan validasi
-- Informasi kontak (Email, Phone, Lokasi)
+- Contact form with validation
+- Contact information (Email, Phone, Location)
 - Social media links
-- Pesan terima kasih
-```
-
-**Animasi 3D:**
-- `rotateX: -10` → `rotateX: 0` (kartu kontak)
-- `rotateY: 2` pada tombol submit
-- `rotateY: 3` pada hover kartu
+- Thank you message
 
 ### 🧭 **Navigation** (`Navbar.tsx`)
-```typescript
-// Fitur utama:
-- Logo dengan efek 3D
-- Menu desktop dan mobile
-- Scroll-based background change
+- Logo with 3D effects
+- Desktop and mobile menu
+- Scroll-based background changes
 - Smooth scroll navigation
-```
-
-**Animasi 3D:**
-- `rotateY: 10` pada logo hover
 
 ### 🦶 **Footer** (`Footer.tsx`)
-```typescript
-// Fitur utama:
-- Informasi copyright
-- Navigasi cepat
-- Tombol back to top
+- Copyright information
+- Quick navigation
+- Back to top button
 - Heart animation
-```
 
-## 🔄 Flowchart Aplikasi
-
-```mermaid
-graph TD
-    A[🏠 User Access Website] --> B[📱 Load App.tsx]
-    B --> C[🧭 Render Navbar]
-    B --> D[🏠 Render Hero Section]
-    B --> E[👤 Render About Section]
-    B --> F[📞 Render Contact Section]
-    B --> G[🦶 Render Footer]
-    
-    C --> C1[📱 Mobile Menu Toggle]
-    C --> C2[🔗 Smooth Scroll Navigation]
-    
-    D --> D1[🖼️ Profile Image with 3D Animation]
-    D --> D2[📝 Animated Title with 3D Effect]
-    D --> D3[🎯 CTA Buttons with Hover Effects]
-    
-    E --> E1[🖼️ About Image with 3D Entrance]
-    E --> E2[📋 Personal Info Cards]
-    E --> E3[📖 Content Description]
-    
-    F --> F1[📝 Contact Form]
-    F --> F2[📇 Contact Information Cards]
-    F --> F3[🔗 Social Media Links]
-    
-    G --> G1[⬆️ Back to Top Button]
-    G --> G2[💖 Heart Animation]
-    
-    D3 --> H[👤 Navigate to About]
-    D3 --> I[📞 Navigate to Contact]
-    
-    H --> E
-    I --> F
-    
-    J[📱 Mobile User] --> K[🍔 Hamburger Menu]
-    K --> L[📋 Mobile Navigation]
-    L --> M[🔗 Navigate to Section]
-    M --> N[📱 Close Menu]
-```
-
-## 🛠️ Teknologi
+## 🛠️ Technologies
 
 ### **Frontend Framework**
-- **React 18.2.0** - Library UI dengan hooks dan modern features
-- **TypeScript 5.2.2** - Type safety dan developer experience
+- **React 18.2.0** - UI library with hooks and modern features
+- **TypeScript 5.2.2** - Type safety and developer experience
 
 ### **Build Tools**
-- **Vite 5.0.8** - Fast build tool dan dev server
+- **Vite 5.0.8** - Fast build tool and dev server
 - **PostCSS** - CSS processing
 - **ESLint** - Code linting
 
@@ -195,60 +120,50 @@ graph TD
 - **Framer Motion 10.16.16** - Animation library
 - **Lucide React 0.294.0** - Icon library
 
-### **Development Dependencies**
-```json
-{
-  "@types/react": "^18.2.43",
-  "@types/react-dom": "^18.2.17",
-  "@vitejs/plugin-react": "^4.2.1",
-  "autoprefixer": "^10.4.16",
-  "eslint": "^8.55.0"
-}
-```
 
-## 📦 Instalasi & Setup
+## 📦 Installation & Setup
 
 ### **Prerequisites**
-- Node.js (versi 16 atau lebih baru)
-- npm atau yarn package manager
+- Node.js (version 16 or newer)
+- npm or yarn package manager
 
-### **1. Clone atau Download Project**
+### **1. Clone or Download Project**
 ```bash
-# Jika menggunakan git
-git clone <repository-url>
-cd faizah-portfolio
+# If using git
+git clone https://github.com/arasukamakannasi-sudo/araporto.git
+cd araporto
 
-# Atau download dan extract ZIP file
+# Or download and extract ZIP file
 ```
 
 ### **2. Install Dependencies**
 ```bash
 npm install
-# atau
+# or
 yarn install
 ```
 
-### **3. Jalankan Development Server**
+### **3. Run Development Server**
 ```bash
 npm run dev
-# atau
+# or
 yarn dev
 ```
 
-### **4. Akses Website**
-Buka browser dan akses: `http://localhost:5173`
+### **4. Access Website**
+Open browser and navigate to: `http://localhost:5173`
 
-### **5. Build untuk Production**
+### **5. Build for Production**
 ```bash
 npm run build
-# atau
+# or
 yarn build
 ```
 
 ### **6. Preview Production Build**
 ```bash
 npm run preview
-# atau
+# or
 yarn preview
 ```
 
@@ -256,11 +171,11 @@ yarn preview
 
 ### **Build Process**
 ```bash
-# Build production
+# Build for production
 npm run build
 
-# Output akan tersimpan di folder 'dist/'
-# Berisi:
+# Output will be saved in 'dist/' folder
+# Contains:
 # - index.html
 # - assets/ (CSS, JS, images)
 ```
@@ -268,18 +183,16 @@ npm run build
 ### **Deploy Options**
 
 #### **1. Static Hosting (Netlify, Vercel)**
-```bash
-# Upload folder 'dist/' ke hosting provider
-# Atau connect repository untuk auto-deploy
-```
+- Upload the `dist/` folder to your hosting provider
+- Or connect your repository for auto-deploy
 
 #### **2. GitHub Pages**
 ```bash
 # Install gh-pages
 npm install --save-dev gh-pages
 
-# Add script di package.json
-"homepage": "https://username.github.io/faizah-portfolio",
+# Add script to package.json
+"homepage": "https://username.github.io/araporto",
 "scripts": {
   "predeploy": "npm run build",
   "deploy": "gh-pages -d dist"
@@ -290,10 +203,8 @@ npm run deploy
 ```
 
 #### **3. Traditional Web Server**
-```bash
-# Copy isi folder 'dist/' ke web server
-# Pastikan server support SPA routing
-```
+- Copy the contents of the `dist/` folder to your web server
+- Ensure the server supports SPA routing
 
 ## 🎯 Filosofi Desain
 
@@ -593,6 +504,8 @@ silahkan hubungi melalui:
 ---
 
 *Terima kasih telah mengunjungi portofolio pribadi saya!* 🙏
-#   f a i z a h a z z a h r a  
- #   a r a p o r t o  
+#   f a i z a h a z z a h r a 
+ 
+ #   a r a p o r t o 
+ 
  

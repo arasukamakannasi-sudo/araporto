@@ -1,4 +1,3 @@
-import React from 'react'
 import { motion } from 'framer-motion'
 import { Heart, ArrowUp } from 'lucide-react'
 
@@ -49,7 +48,7 @@ const Footer: React.FC = () => {
             >
               <h4 className="text-lg font-semibold mb-6 font-poppins">Navigasi Cepat</h4>
               <div className="space-y-3">
-                {['Home', 'About', 'Contact'].map((item, index) => (
+                {['Home', 'About', 'Contact'].map((item) => (
                   <motion.a
                     key={item}
                     href={`#${item.toLowerCase()}`}
